@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vivekgandhi.abcbuilders.Test"
+    tools:showIn="@layout/activity_test"
+    android:background="#000000">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="5dp"
+       >
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_margin="5dp"
+           >
+
+
+           <ImageView
+               android:layout_width="75dp"
+               android:layout_height="75dp"
+               android:background="@drawable/anonymous"
+               android:id="@+id/imageView3" />
+
+           <TextView
+               android:text="excellent property at best price.excellent property at best price"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/textView4"
+               android:layout_margin="5dp"
+               android:textSize="15dp"
+               android:textColor="#ffffff"/>
+
+      </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_margin="5dp"
+           >
+
+
+           <ImageView
+               android:layout_width="75dp"
+               android:layout_height="75dp"
+               android:background="@drawable/anonymous"
+               android:id="@+id/imageView4" />
+
+           <TextView
+               android:text="best property. "
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/textView5"
+               android:layout_margin="5dp"
+               android:textColor="#ffffff"
+               android:textSize="15dp"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

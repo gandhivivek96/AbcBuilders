@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "5019634268",
+    "firebase_url": "https://abcbuilder-d7474.firebaseio.com",
+    "project_id": "abcbuilder-d7474",
+    "storage_bucket": "abcbuilder-d7474.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5019634268:android:9a534e5d1b59108e",
+        "android_client_info": {
+          "package_name": "com.example.vivekgandhi.abcbuilders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5019634268-bi4b8t1tks6qnetqjbacefa0n99t2he2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vivekgandhi.abcbuilders",
+            "certificate_hash": "c8f24c3e4d3caf8e1951435ab3588d481166ca0f"
+          }
+        },
+        {
+          "client_id": "5019634268-frdjioe5a1l4qjvbimrqnfsccdpltcpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP7kcYObolLMPG9TkuA3EgWNCb4F8GFcY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5019634268-frdjioe5a1l4qjvbimrqnfsccdpltcpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
