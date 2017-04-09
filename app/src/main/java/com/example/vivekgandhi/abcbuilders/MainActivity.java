@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
                 email = email.trim();
                 password = password.trim();*/
-                String email = et1.getText().toString().trim();
-                String password = et2.getText().toString().trim();
+                final String email = et1.getText().toString().trim();
+                final String password = et2.getText().toString().trim();
 
                 if (email.isEmpty() || password.isEmpty()) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -90,11 +90,20 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
-                                        Intent intent = new Intent(MainActivity.this,Navigation.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        if(email.equals("vivekadmin@gmail.com") && password.equals("admin123")){
+                                            Intent intent = new Intent(MainActivity.this,AdminActivity.class);
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                            startActivity(intent);
+                                        }
+                                        else {
+                                            Intent intent = new Intent(MainActivity.this, Navigation.class);
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
                                         startActivity(intent);
-                                    } else {
+                                    } }
+                                    else {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                                         builder.setMessage(task.getException().getMessage())
                                                 .setTitle(R.string.login_error_title)

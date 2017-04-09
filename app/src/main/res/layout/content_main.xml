@@ -35,7 +35,7 @@
         android:layout_marginTop="54dp"
         android:id="@+id/signUp"
         android:textColor="#ffffff"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        />
 
     <EditText
         android:layout_width="match_parent"
@@ -46,6 +46,7 @@
         android:id="@+id/Mypass"
         android:hint="Enter Password "
         android:textColorHint="#FFFFFF"
+        android:textColor="#ffffff"
         android:layout_below="@+id/Myemail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
